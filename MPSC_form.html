@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Forms</title>
+	</head>
+	<body>
+		<font size="4" color="navy">
+			<h1 style="text-align: center;"> MPSC Exam Registration 2021</h1>
+		</font>
+		<form action="/action_page.php" target="_blank" method="post" autocomplete="off">
+			<fieldset>
+				<legend><b>Student Information</b></legend>
+				First Name :
+				<input Type="text" name="firstname"><br><br>
+				Middle Name :
+				<input Type="text" name="middlename"><br><br>
+				Last Name :
+				<input Type="text" name="lastname"><br><br>
+				Parents Name :
+				<input Type="text" name="parentsname"><br><br>
+				Mobile No :
+				<input Type="tel" id="phone"name="phone" size="10" placeholder="Enter Phone Number"><br><br>
+				Email-ID :
+				<input Type="email" name="email" required><br><br>
+				<label for="ID Proof">Choose your ID Proof:</label>
+				<select name="Idproof" id="proof" size="1">
+					<option value="adharcard" selected>Adhar Card</option>
+					<option value="pancard ">Pancard</option>
+					<option value="voterid">Voter ID</option>
+					<option value="bonafide">Caste Certificate</option>
+				</select>
+				<input type="file" name="myfile"><br><br>
+				Address :
+				<br><textarea id="address" name="Address" rows="2" cols="40" placeholder="street name,pincode,city name,landmark"></textarea><br>
+			</fieldset>
+			<fieldset>
+			<legend><b>Educational Information</b></legend>
+			<label for="college">Choose your College Name from the list :</label>
+			<input list="colleges" name="college" id="college">
+			<datalist id="colleges">
+				<option value="Walchand College of Engineering,Sangli">
+				<option value="College of Engineering ,Pune">
+				<option value="IIT,Bombay">
+				<option value="PICT,Pune">
+				<option value="VJTI,Mumbai ">
+			</datalist>
+			<br><br>
+			<label for="University">Choose your University Name from the list :</label>
+			<input list="Universities" name="University" id="University">
+			<datalist id="Universities">
+				<option value="Shivaji University">
+				<option value="Savitribai Phule Pune University">
+				<option value="University of Mumbai">
+				<option value="Indian Institute of Technology Bombay">
+				<option value="Tata institute of Fundamental Research">
+			</datalist>
+			<br><br>
+			<label for="Branch">Choose your Branch :</label>
+			<select name="branch" id="branch">
+					<option value="Computer Science" selected>Computer Science</option>
+					<option value="Electical">Electical</option>
+					<option value="Electronics">Electronics</option>
+					<option value="Mechanical">Mechanical</option>
+					<option value="Civil">Civil</option>
+			</select><br><br>
+			Exam Seat Number :
+				<input Type="text" size="10"><br><br>
+				<label for="qualifications">Choose your Qualification:</label>
+				<select name="qualifications" id="qualification" >
+					<option value="Higher Certificate" >Higher Certificate</option>
+					<option value="Bachelor's Degree" selected>Bachelor's Degree</option>
+					<option value="National Diploma">National Diploma</option>
+					<option value="Master's Degree">Master's Degree</option>
+				</select>
+			</fieldset>
+			<fieldset>
+			<legend><b>Exam Preferences</b></legend>
+			<label for="Paper Branch">Choose a  MPSC Exam Paper Branch:</label>
+			<select id="Paper Branch" name="Paper Branch">
+				<option value="MPSC Prelims 2020" selected>MPSC Prelims 2020</option>
+				<option value="MPSC Subordinate Services (Group B) Prelims 2020 " >MPSC Subordinate Services (Group B) Prelims 2020</option>
+				<option value="MPSC Engineering Services Prelims 2020">MPSC Engineering Services Prelims 2020</option>
+				<option value=""></option>
+			</select><br><br>
+  
+			<label for="Exam City">Choose a Exam City:</label>
+			<select name="Exam City" id="Exam City">
+				<optgroup label="Maharashtra">
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Kolahapur">Kolahapur</option>
+					<option value="Sangli">Sangli</option>
+				</optgroup>
+				<optgroup label="Assam">
+					<option value="Guwahati">Guwahati</option>
+					<option value="Sivasagar">Sivasagar</option>
+				</optgroup>
+				<optgroup label="Kerala">
+					<option value="Kochi">Kochi</option>
+					<option value="Thiruvananthapuram">Thiruvananthapuram</option>
+				</optgroup>
+				<optgroup label="Karnataka">
+					<option value="Bengaluru">Bengaluru</option>
+					<option value="Hubli">Hubli</option>
+				</optgroup>
+			</select>
+			<br><br>
+			</fieldset>
+			<button onclick="myFunction()">click to submit</button><input type="reset">
+
+			<script>
+				function myFunction() {
+				alert("Form submitted scussesfully");
+				}
+			</script>
+		</form>
+	</body>
+</html>
